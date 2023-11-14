@@ -57,7 +57,6 @@ capybaraClasses.forEach((capyClass) => {
     })
 
 
-<<<<<<< HEAD
     
 })
 
@@ -65,10 +64,3 @@ capybaraClasses.forEach((capyClass) => {
 function formatCapyNames(capyName) {
     return capyName.replace(/ /g, "-");
 }
-=======
-const capybaraClasses = document.querySelectorAll('.capy-class-container')
-
-capybaraClasses.forEach((class) => {
-    class.addEventListener()
-})
->>>>>>> 2e4f761c6af54d9d1607baf0f12e5fd97450ab3c
