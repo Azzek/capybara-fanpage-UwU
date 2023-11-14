@@ -1,0 +1,48 @@
+.cointainer2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.capy-class-image {
+    height: 150px;
+    width: 140px;
+    border-radius: 30px;
+    border: 2px #008170 solid ;
+}
+
+.capy-class-description {
+    width: 135px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    font-weight: 500;
+    margin-left: 7px;
+}
+.capy-class-container {
+    background-color: rgba(141, 144, 150, 0.24);
+    border-radius: 30px;
+    scroll-behavior: smooth;
+    position: relative;
+}
+.capy-class-container::-webkit-scrollbar {
+    display: none;
+}
+.capibara-classes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+   
+}
+
+.capy-name {
+    font-size: 19px;
+    font-weight: 600;
+}
+
