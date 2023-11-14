@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     width: 100vw;
     gap: 80px;
+    position: relative;
   
 }
 
@@ -16,8 +17,8 @@ body {
 .container1 {
     margin: 9rem auto 0 auto;
     width: 80%;
-    height: 43vh;
-    background-color: rgba(141, 144, 150, 0.24);
+    height: auto;
+    background-color:  rgba(108, 108, 109, 0.24)     ;
     border-radius: 35px;
     display: flex;
     flex-direction: row;
@@ -25,18 +26,23 @@ body {
     flex-shrink: 0;
     z-index: 1;
     position: relative;
+    -webkit-box-shadow: 0px 20px 80px -32px rgba(66, 69, 90, 1);
+-moz-box-shadow: 0px 20px 80px -32px rgba(66, 69, 90, 1);
+box-shadow: 0px 20px 80px -32px rgba(66, 69, 90, 1);
 }
 
 
 
 .container1-left {
     width: 45vw;
+    height: auto;
     display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center;
   gap: 20px;
   position: relative;
+  
 }
 .container1-left h1 {
     display: flex;
@@ -54,7 +60,7 @@ body {
   background-color: rgb(0, 129, 112);
   font-size: 16px;
   font-weight: 600;
- 
+  margin-top: 20px ;
  
 }
 .container1-right {
@@ -69,23 +75,22 @@ body {
 }
 
 
-@media (max-width: 1400px) {
-    .container1 {
-        height: 40vh;
-    }
-}
 
-@media (max-width: 1030px) {
+@media (min-width: 1200px) {
     .container1 {
-        height: 43vh;
+        height:auto;
     }
 
 }
+
+
+
 
 
 @media (max-width:900px) {
     .container1 {
-        height: 43vh;
+        margin: 9rem auto 0 0;
+        height: auto;
         margin-top: 8rem;
         justify-content: flex-start;
         width: auto;
@@ -93,9 +98,10 @@ body {
     }
     .container1-left {
         width: 38vw;
+
         display: block;
         text-align: center;
-        height: 20vh;
+       
         align-items: end;
       
     }
@@ -108,39 +114,34 @@ body {
     .container1-right  img {
         width: 42vw;
     }
-    .container1-left button {
-        position: absolute;
-        top: 180%;
-        left: 20%;        
-        
-    }
+   
 }
 
 
 @media(max-width:740px) {
     .container1 {
         width: 50vw;
+        margin: 9rem auto 0 auto;
         height: auto;
         background-color: rgba(141, 144, 150, 0.24);
         border-radius: 35px;
         display: flex;
         flex-direction: column;
-        gap: 220px;
+        gap: 30px;
         flex-shrink: 0;
         align-items: center;
         justify-content: center;
     }
+    .container1-left {
+        width: auto;
+        
+    }
     .container1-right  img {
         width: 100%;
     }
-    .container1-left button {
-        position: absolute;
-        top: 200%;
-        left: 15%;        
-        
-    }
+  
     .container1-left h1  {
-        margin: 0;
+        margin-top: 7px;
         font-size: 30px;
         line-height: 0.9;
         margin-bottom: 15px;
@@ -154,31 +155,26 @@ body {
     .container1{
         height: auto;
     }
-    .container1-left button{
-        top: 240%;
-    }
+    
     .container1-left h1  {
         margin-top: 15px;
     }
     .container1-right{
-        margin-top: 70px;
+        margin-top: 7px;
     }
 }
 @media (max-width: 600px) {
     .container1{
         height: auto;
     }
-    .container1-left button{
-        top: 0px;
-    }
+    
     .container1-left h1  {
-        margin-top: 15px;
+        margin-top: 12px;
     }
     .container1-right{
-        margin-top: 90px;
+        margin-top: 8px;
     }
 }
-
 
 
 
