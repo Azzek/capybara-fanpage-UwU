@@ -51,20 +51,33 @@
 }
 
 .capy-informations-popup {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: auto;
     position: absolute;
-    top: -210PX;
+    top: -400PX;
     left: 60px;
     display: none;
-    border: 8px outset #1C6EA4;
-    border-radius: 25px 25px 25px 0px;
+    border: 8px solid rgba(108, 108, 109, 0.24);
+    background-color: transparent;
+    backdrop-filter: blur(9px);
+    border-radius: 20px 20px 20px 20px;
+    z-index: 5;
 }
 .capy-informations-popup img {
-    width: 200px;
-    height: 200px;
+    width: 250px;     
+    border-radius: 15px;
+}
+
+.capy-informations-popup h1 {
+    margin: 0;
+}
+
+.capy-informations-popup span {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .displayNone {
     display: block;
 }
+
