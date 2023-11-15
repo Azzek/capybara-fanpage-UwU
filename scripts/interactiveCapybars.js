@@ -1,6 +1,8 @@
 
 let HTML = ``;
 let showCapibaraHTML = ``;
+
+
 capybaras.forEach((capybara) => {
     
 
@@ -36,9 +38,9 @@ const capybaraClasses = document.querySelectorAll('.capy-class-container')
 capybaraClasses.forEach((capyClass) => {
 
     capyClass.addEventListener('click', () => {
-
-        document.querySelector(`.js-capy-informations-popup-${JSON.parse(localStorage.getItem('chosenCapibara'))}`).classList.remove('displayBlock', 'active')
-      
+        if (localStorage.getItem('chosenCapibara')) {
+          document.querySelector(`.js-capy-informations-popup-${JSON.parse(localStorage.getItem('chosenCapibara'))}`).classList.remove('displayBlock', 'active') 
+        }
         const classId = capyClass.dataset.capiId
         
        const popup = document.querySelector(`.js-capy-informations-popup-${formatCapyNames(classId)}`)
@@ -62,10 +64,10 @@ capybaraClasses.forEach((capyClass) => {
     
 })
 
-if (localStorage.getItem('chosenCapibara')) {
 
-    document.querySelector(`.js-capy-informations-popup-${JSON.parse(localStorage.getItem('chosenCapibara'))}`).classList.add('displayBlock', 'active')
-}
+    
+
+    
 
 function formatCapyNames(capyName) {
     return capyName.replace(/ /g, "-");
