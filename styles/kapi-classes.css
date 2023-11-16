@@ -11,7 +11,7 @@
     border-radius: 30px;
     border: 2px #008170 solid ;
 }
-.show-chosen-capibara {
+.show-chosen-capibara-container {
     width: 250px;
     height: 620px;
     text-align: center;
@@ -20,7 +20,7 @@
     border-radius: 20px 20px 20px 20px;
     border: 8px solid rgba(108, 108, 109, 0.24);
 }
-.capy-informations-popup {
+.capibara-to-show {
     width: 250px;
     height: 620px;
     display: none;
@@ -70,16 +70,16 @@
 }
 
 
-.capy-informations-popup img {
+.show-chosen-capibara-container img {
     width: 250px;     
     border-radius: 15px;
 }
 
-.capy-informations-popup h1 {
+.show-chosen-capibara-container h1 {
     margin: 0;
 }
 
-.capy-informations-popup span {
+.show-chosen-capibara-container span {
     font-size: 18px;
     font-weight: 600;
 }
@@ -88,7 +88,7 @@
     display: block;
 }
 
-.capy-informations-popup.active {
+.capibara-to-show.active {
     opacity: 1;
     transition: 0.6;
 }
